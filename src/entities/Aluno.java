@@ -49,8 +49,7 @@ public class Aluno {
 			somaNotas += nota.getValor() * nota.getPeso();
 		}
 
-		Nota nota = new Nota(somaNotas, somaPeso);
-		notas.add(nota);
+		notas.add(new Nota(somaNotas, somaPeso));
 	}
 	
 	public void removeNota(double notaValor) throws NotaInvalidaException, PesoInvalidoException {                   
